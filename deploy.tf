@@ -7,7 +7,6 @@ resource "openstack_compute_instance_v2" "vm1" {
   flavor_name       = "basic20.xs"
   key_pair          = "imported-openssh-key"
   config_drive      = true
-  user_data         = "#cloud-config\npassword: deleteme"
   security_groups   = ["default"]
 
   network {
